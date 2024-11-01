@@ -40,11 +40,11 @@ def main():
     ax.set_ylabel("Frequency")
     st.pyplot(fig)
 
-    # Mileage vs Price Scatter plot
-    st.subheader("Mileage vs. Price")
+    # Odometer (Mileage) vs Price Scatter plot
+    st.subheader("Odometer vs. Price")
     fig, ax = plt.subplots()
-    ax.scatter(filtered_data['mileage'], filtered_data['price'])
-    ax.set_xlabel("Mileage")
+    ax.scatter(filtered_data['odometer'], filtered_data['price'])
+    ax.set_xlabel("Odometer")
     ax.set_ylabel("Price")
     st.pyplot(fig)
 
